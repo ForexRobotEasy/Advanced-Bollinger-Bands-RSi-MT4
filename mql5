@@ -1,0 +1,67 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                                       Advanced Bollinger Bands RSi MT4 |
+//|                                          https://www.forexroboteasy.com |
+//|                                                      Forex Robot Easy Team |
+//+------------------------------------------------------------------+
+
+// Constants
+#define TP_ZONE_COLOR clrGreen
+#define SELL_SIGNAL_COLOR clrRed
+#define BUY_SIGNAL_COLOR clrBlue
+
+// Input parameters
+input double BollingerBandsPeriod = 20; // Period for Bollinger Bands
+input double BollingerBandsDeviation = 2.0; // Deviation for Bollinger Bands
+input double RSIPeriod = 14; // Period for RSI
+input double OverboughtLevel = 70; // RSI overbought level
+input double OversoldLevel = 30; // RSI oversold level
+input ENUM_STOP_MODE StopLossMode = STOP_MODE_PERCENT;
+input double StopLossValue = 1; // Stop Loss value in percentage
+input double StopLossDistance = 100; // Stop Loss distance in points
+input double StopLossLevel = 1.09; // Stop Loss level
+input ENUM_TAKE_PROFIT TakeProfitDefinition = TAKE_PROFIT_FIXED;
+input double TakeProfitValue = 1; // Take Profit value in percentage
+input double TakeProfitDistance = 100; // Take Profit distance in points
+input double TakeProfitLevel = 1.11; // Take Profit level
+
+//+------------------------------------------------------------------+
+//| Expert initialization function                                   |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+    // Add initialization code here
+
+    return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//| Expert deinitialization function                                 |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+    // Add deinitialization code here
+}
+
+//+------------------------------------------------------------------+
+//| Expert tick function                                             |
+//+------------------------------------------------------------------+
+void OnTick()
+{
+    // Add tick processing code here
+}
+
+//+------------------------------------------------------------------+
+//| Custom functions                                                 |
+//+------------------------------------------------------------------+
+void CheckSignals()
+{
+    // Add code to check for signals and display arrows here
+}
+
+void DisplayTPZone()
+{
+    // Add code to display TP zone with green circles here
+}
+
+//+------------------------------------------------------------------+
